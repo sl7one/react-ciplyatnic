@@ -1,0 +1,28 @@
+@import '../../css/vars.scss';
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &.orders {
+    background-color: $ordersColor;
+  }
+  &.purchases {
+    background-color: $purchasesColor;
+  }
+  &.salles {
+    background-color: $salesColor;
+  }
+
+  span {
+    font-weight: 600;
+    color: red;
+  }
+}

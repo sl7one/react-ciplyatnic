@@ -1,0 +1,22 @@
+.statistic {
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+
+  &__list {
+  }
+
+  &__item {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__total {
+    text-align: right;
+    span {
+      color: red;
+      font-weight: 600;
+    }
+  }
+}

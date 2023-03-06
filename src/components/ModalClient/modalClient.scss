@@ -1,0 +1,107 @@
+@import '../../css/vars.scss';
+
+.client {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  pointer-events: all;
+  overflow: auto;
+
+  &__title {
+    // padding: 10px 0;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 10px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid $borderColor;
+    padding: 15px;
+  }
+
+  &__btns-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    padding: 10px;
+    background-color: $borderColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:nth-child(2) {
+      flex: 3;
+    }
+  }
+
+  &__remove-btn {
+    padding: 10px;
+    background-color: $borderColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+  }
+
+  &__picker {
+  }
+
+  &__poultry-list {
+  }
+
+  &__poultry-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__poultry-info {
+    display: flex;
+    gap: 5px;
+    padding: 0 10px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__form-btns-wrapper {
+    display: flex;
+  }
+
+  &__form-btn {
+    padding: 10px;
+    background-color: $borderColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+}

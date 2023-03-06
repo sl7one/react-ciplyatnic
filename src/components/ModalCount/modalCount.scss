@@ -1,0 +1,74 @@
+@import '../../css/vars.scss';
+
+.count {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  pointer-events: all;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+
+  &__title-wrap {
+    display: flex;
+  }
+
+  &__title {
+    font-size: $titleSize;
+    padding: 35px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66.6667%;
+  }
+
+  &__btn-add {
+    width: 100%;
+    text-align: center;
+    font-size: $titleSize;
+    background-color: aquamarine;
+    width: 33.3333%;
+    align-items: center;
+    justify-content: center;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3333%;
+    font-size: $titleSize;
+    padding: 35px 0;
+    border-left: 1px solid rgb(224, 224, 224);
+    border-bottom: 1px solid rgb(224, 224, 224);
+
+    transition: background-color 350ms ease-in-out;
+
+    &:active {
+      background-color: rgb(224, 224, 224);
+    }
+
+    &:last-child {
+      width: 66.6667%;
+      border-right: 1px solid rgb(224, 224, 224);
+    }
+
+    &:nth-child(-n + 3) {
+      border-top: 1px solid rgb(224, 224, 224);
+    }
+
+    &:nth-child(3n) {
+      border-right: 1px solid rgb(224, 224, 224);
+    }
+  }
+}

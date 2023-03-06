@@ -1,0 +1,51 @@
+@import './vars.scss';
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+span,
+button {
+  font-size: $textSize;
+  line-height: 1.625;
+  font-weight: normal;
+}
+h1 {
+  font-size: $titleSize;
+}
+h2 {
+  font-size: $subTitleSize;
+}
+
+.container {
+  padding: 15px;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+#modal-picker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+#modal-edit {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}

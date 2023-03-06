@@ -1,0 +1,44 @@
+@import '../../css/vars.scss';
+
+.header {
+  background-color: $titleColor;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.4);
+
+  &.orders {
+    background-color: $ordersColor;
+  }
+  &.purchases {
+    background-color: $purchasesColor;
+  }
+  &.salles {
+    background-color: $salesColor;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__button {
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  &__back {
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+}

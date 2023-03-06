@@ -1,0 +1,60 @@
+@import '../../css/vars.scss';
+
+.edit {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  pointer-events: all;
+  overflow: scroll;
+
+  .client__label.date {
+    background-color: antiquewhite;
+    padding: 15px 0;
+  }
+
+  &__list-tilte-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  &__date {
+    display: flex;
+  }
+
+  &__btns-wrapper {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__btn {
+    padding: 10px;
+    background-color: $borderColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  &__list {
+  }
+  &__item {
+    display: flex;
+    flex: 1;
+
+    button:first-child {
+      flex: 3;
+      justify-content: flex-start;
+    }
+  }
+
+  span {
+    width: 200px;
+  }
+}
