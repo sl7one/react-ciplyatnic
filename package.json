@@ -2,7 +2,7 @@
   "name": "cyplyatnic",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sl7one.github.io/cyplyatnic/",
+  "homepage": "https://sl7one.github.io/react-ciplyatnic/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
     "axios": "^1.3.3",
