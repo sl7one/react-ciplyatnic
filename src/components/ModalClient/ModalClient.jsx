@@ -1,7 +1,7 @@
 import './modalClient.scss';
 import 'react-datepicker/dist/react-datepicker.css';
 import { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { fetchCategories } from '../../redux/slices/categoriesOperations';
 import { addOrders } from '../../redux/slices/ordersOperations';
 import { addPurchases } from '../../redux/slices/purchasesOperations';
@@ -15,7 +15,7 @@ import { ClientForm } from '../ClientForm/ClientForm';
 export const ModalClient = ({ setIsOpenClient, id }) => {
   const [flags, setFlags] = useState({ label: { name: false, phone: false, location: false } });
   const dispatch = useDispatch();
-  const itemsCategories = useSelector(state => state.categories.categories.items);
+  // const itemsCategories = useSelector(state => state.categories.categories.items);
 
   const [dataForm, setFormData] = useState({
     name: '',
